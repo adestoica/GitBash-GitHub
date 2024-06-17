@@ -30,7 +30,7 @@ html {
   font-size: 22px;
 }
 
-.flexContainer {
+.flexContainerBash {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
