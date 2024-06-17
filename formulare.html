@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>formulare</title>
+    <link rel="stylesheet" href="mystyles.css" />
+  </head>
+  <body>
+    <div>
+      <ul class="navigation">
+        <li><a href="index.html">Inapoi acasa</a></li>
+        <li><a href="informatiipersonale.html">Despre mine</a></li>
+        <li><a href="tabel.html"> Tabele</a></li>
+        <li><a href="fisiere.html">Multimedia</a></li>
+        <li><a href="css.html">CSS</a></li>
+      </ul>
+    </div>
+    <h1>Formulare</h1>
+    <hr />
+
+    <h3>Creeaza un cont nou</h3>
+    <form>
+      <label for="nume">Numele:</label>
+      <input
+        type="text"
+        placeholder="Introduceti numele"
+        id="nume"
+        name="numele"
+      />
+      <br />
+      <label for="ani">Varsta:</label>
+      <input type="number" placeholder="Varsta" id="ani" name="varsta" />
+      <br />
+      <label for="email">Adresa email:</label>
+      <input type="email" placeholder="Email" id="email" name="email" />
+      <br />
+      <label for="parola">Parola:</label>
+      <input
+        type="password"
+        placeholder="Introduceti parola"
+        id="parola"
+        name="password"
+      />
+      <br />
+
+      <input type="checkbox" id="bifa" name="acord" />
+      <label for="bifa">Am citit termenii si conditiile.</label>
+
+      <div>
+        <label>Sunteti de acord cu procesarea datelor personale?</label>
+
+        <input type="radio" name="procesareDate" id="acord" value="Da" />
+        <label for="acord">Da</label>
+        <input type="radio" name="procesareDate" id="acord2" value="Nu" />
+        <label for="acord2">Nu</label>
+        <br />
+        <input class="buttonSend" type="submit" value="Trimite" />
+        <!-- <button>Trimite acum</button> -->
+        <!-- <button class="buttonSend" type="button">Nu trimite</button> -->
+      </div>
+    </form>
+  </body>
+</html>
