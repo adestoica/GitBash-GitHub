@@ -1,0 +1,203 @@
+<html>
+  <head>
+    <title>Index page</title>
+    <link rel="stylesheet" href="mystyles.css" />
+    <div>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Marcellus+SC&family=Oranienbaum&family=Sedan:ital@0;1&family=Vesper+Libre:wght@400;500;700;900&display=swap"
+        rel="stylesheet"
+      />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Marcellus+SC&family=Oranienbaum&family=Sedan:ital@0;1&family=Vesper+Libre:wght@400;500;700;900&display=swap"
+        rel="stylesheet"
+      />
+    </div>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  </head>
+
+  <body>
+    <ul class="navigation">
+      <li><a href="informatiipersonale.html">Despre mine</a></li>
+      <li><a href="tabel.html"> Tabele</a></li>
+      <li><a href="formulare.html">Formulare</a></li>
+      <li><a href="fisiere.html">Multimedia</a></li>
+      <li><a href="css.html">CSS</a></li>
+    </ul>
+
+    <img class="imagineLogo" src="codes.jpg" alt="logo html" />
+    <h1 class="titleHtml">Prima pagina HTML</h1>
+
+    <section>
+      <h2>
+        Taguri si elemente populare in
+        <a href="https://www.w3schools.com/html/"> HTML</a>
+      </h2>
+
+      <p>
+        Cel mai folosit element este paragraful.Acesta este notat cu tag-ul:
+        <span> &lt;p&gt;</span>.
+      </p>
+      <p>
+        Un alt element popular este headingul. Headingurile pot fi de mai multe
+        tipuri. Ele se diferentiaza prin numere. Pornind de la valoarea 1, care
+        reprezinta cel mai mare font, pana la numarul 6 care reprezinta cel mai
+        mic font.
+        <br />Headingurile sunt:
+      </p>
+
+      <ol>
+        <span>
+          <li>&lt;h1&gt;</li>
+          <li>&lt;h2&gt;</li>
+          <li>&lt;h3&gt;</li>
+          <li>&lt;h4&gt;</li>
+          <li>&lt;h5&gt;</li>
+          <li>&lt;h6&gt;</li></span
+        >
+      </ol>
+
+      <p>
+        Spanul este un subelement folosit pt a selecta si manipula un cuvant, o
+        propozitie sau o fraza.
+        <br />
+        Se noteaza cu <span> &lt;span&gt;</span>.
+      </p>
+      <p>
+        Cu ajutorul tag-ului
+        <span> &lt;hr/&gt;</span> realizam o linie care are rolul de a desparti
+        vizual titlul paginii de restul continutului paginii.
+      </p>
+
+      <p>
+        Un alt element de sine stator este brake, care ne ajuta la realizarea
+        unei noi lini, in interiorul aceluiasi paragraf. Se noteaza cu
+        <span> &lt;br&gt;</span>. Acesta nu are nevoie de tag de inchidere.
+      </p>
+      <p>
+        Un alt elemnent este<span> &lt;div&gt;</span>. Acesta ne ajuta la
+        formarea unor "containere" unde putem stoca mai multe elemente.
+      </p>
+      <p>
+        Tagul <span> &lt;section&gt;</span> ne ajuta atunci cand vrem sa
+        delimitam subiectele dintr-o pagina.
+      </p>
+      <p>
+        Pentru a insera imagini, folosim tagul
+        <span> &lt;img&gt;</span>. Vom folosi comanda "src" pentru a adauga
+        sursa imaginii.
+      </p>
+      <p>
+        Un alt tag des intalnit este
+        <span> &lt;a&gt;</span>. Acesta ne ajuta la atasarea unor link-uri din
+        mediul nostru de stocare sau din surse externe. <br />
+        Ne vom folosi de comanda "href" pentru a indica folderul-locatie sau
+        link-ul. Atunci cand fisierul pe care dorim sa-l atasam nu este in
+        acelasi folder, vom scrie "../" inaintea fisierului.<br />
+        Pentru link-uri din surse externe, vom nota si "https" = Hipertext
+        Transfer Protocol Secure.
+      </p>
+      <p>
+        Toate informatiile despre Html, sau cel putin o buna parte, pot fi
+        gasite pe <a href="https://www.google.ro/">google</a>.
+      </p>
+    </section>
+    <section>
+      <h2>Liste ordonate si neordonate</h2>
+      <p>
+        Foarte des intalnite in paginile HTML sunt si listele. Avem doua
+        categorii de liste:
+      </p>
+      <ul>
+        <li>
+          Liste neordonate: notate cu
+          <span> &lt;ul&gt;</span>;
+        </li>
+        <li>
+          Liste ordonate: notate cu
+          <span> &lt;ol&gt;</span>.
+        </li>
+      </ul>
+      <p>
+        Dupa ce ai notat modelul de lista de care ai nevoie, adaugam si tagul
+        <span> &lt;li&gt;</span>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Tabele</h2>
+      <p>
+        Pentru tabele vom avea nevoie de tag-ul<span> &lt;table&gt;</span>. In
+        interiorul tag-lui table, vom pune si tag-urile<span>
+          &lt;thead&gt; </span
+        >si <span> &lt;tbody&gt;</span>. In interiorul acestora vom pune
+        tag-urile<span> &lt;tr&gt;</span> si <span> &lt;td&gt;</span>, dar in
+        cadrul head-ului fontul va fi cu bold.
+      </p>
+    </section>
+    <section>
+      <h2>Formulare</h2>
+      <div class="flex-container">
+        <div class="border-red" style="background-color: hsl(273, 44%, 69%)">
+          <p>
+            Pentru a crea un formular vom avea nevoie de tag-ul
+            <span>&lt;form&gt;</span>.
+          </p>
+        </div>
+        <div class="border-red" style="background-color: rgb(134, 173, 196)">
+          <p>
+            Penru a crea acele casute unde vor fi introduse informatiile pe care
+            utilizatorul le va completa, ne vom folosi de tag-ul<span>
+              &lt;input&gt;</span
+            >.
+          </p>
+        </div>
+        <div class="border-red" style="background-color: rgb(239, 226, 121)">
+          <p>
+            Pentru a pune o eticheta pentru input, tag-ul
+            <span> &lt;label&gt;</span> ne ajuta.
+          </p>
+        </div>
+        <div class="border-red" style="background-color: rgb(115, 213, 187)">
+          <p>
+            Pentru a "conecta" tag-ul input cu label, avem nevoie de atributul
+            <span>id</span>, caruia ii vom da aceeasi valoare in ambele tag-uri.
+          </p>
+        </div>
+        <div class="border-red" style="background-color: rgb(183, 126, 126)">
+          <p>
+            Folosind atributul <span>placeholder</span>, putem scrie text-ul
+            dorit in interiorul tag-ului input.
+          </p>
+        </div>
+        <div class="border-red" style="background-color: rgb(157, 211, 117)">
+          <p>
+            Cu ajutorul atributului <span>type</span> putem selecta ce tip de
+            input avem nevoie, dupa cum urmeaza:
+          </p>
+          <ul>
+            <li><span>text</span></li>
+            <li><span>number</span></li>
+            <li><span>email</span></li>
+            <li><span>password</span></li>
+            <li><span>checkbox</span></li>
+            <li><span>radio</span></li>
+          </ul>
+        </div>
+        <div class="border-red" style="background-color: rgb(206, 171, 130)">
+          <p>
+            Atributul <span>name</span> ne ajuta sa atribuim un nume
+            informatiilor scrise de catre utilizator in casetele de input.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section></section>
+  </body>
+</html>
