@@ -1,0 +1,487 @@
+<html>
+  <head>
+    <title>CSS</title>
+    <link rel="stylesheet" href="mystyles.css" />
+  </head>
+  <body>
+    <div>
+      <ul class="navigation">
+        <li><a href="index.html">Inapoi acasa</a></li>
+        <li><a href="informatiipersonale.html">Despre mine</a></li>
+        <li><a href="tabel.html"> Tabele</a></li>
+        <li><a href="formulare.html">Formulare</a></li>
+        <li><a href="fisiere.html">Multimedia</a></li>
+        <li><a href="css.html">CSS</a></li>
+      </ul>
+    </div>
+    <img class="imagineCSS" src="cssimage.jpg" alt="imagecss" />
+    <h1>CSS</h1>
+    <hr />
+    <p>
+      CSS este un limbaj folosit pentru a stiliza o pagina HTML. Acesta descrie
+      cum vor arata elementele in pagina HTML.
+      <br />Avem nevoie de o foaie de stil externă salvată cu extensia .css.
+      Fiecare fisier trebuie sa cuprinda o referinta in head, la fisierul extern
+      CSS. Exemplu: &lt;link rel="stylesheet" href="mystyle.css"&gt;.
+    </p>
+    <section>
+      <h2>Selectori</h2>
+      <p>
+        Cu ajutorul selectorilor de tag, atribuim anumite caracteristici
+        elementelor dorite. Spre exemplu, daca in fisierul css scriem "p", toate
+        paragrafele vor primi caracteristicile ce urmeaza sa fie scrise.
+        <br />O data ales selectorul, vom nota o proprietate, de exemplu
+        "color", iar pentru aceasta trebuie sa-i atribuim o valoare
+        proprietatii. De exemplu "red".
+      </p>
+      <p>
+        Foarte des intalnite sunt clasele. Acestea creeaza o conexiune intre
+        fisierul dorit si fisierul de CSS. Pentru a utiliza o clasa, trebuie sa
+        alegi locul unde vrei sa formezi o clasa, spre exemplu in Heading si va
+        lua numele "class=exempluCss", iar apoi in fisierul CSS, vom nota
+        ".exempluCss{ }".
+      </p>
+      <p>
+        Putem opta si pentru atributul "style." Acesta poate fi folosit foarte
+        usor direct in interiorul elementului caruia vrem sa-i atribuim anumite
+        caracteristici sau o alta varianta ar fi introducerea atributului
+        &lt;style&gt; in head.
+      </p>
+      <p>Cu ajutorul semnului "*", putem selecta toate elementele Html.</p>
+      <p>
+        Un alt selector posibil este "id", dar acesta este mai putin utilizat ca
+        selector de tag.
+      </p>
+    </section>
+    <section>
+      <h2>Culori in CSS</h2>
+      <p>
+        Culorile sunt specificate folosind nume de culori predefinite sau valori
+        RGB, HEX, HSL, RGBA, HSLA.
+      </p>
+      <p>
+        Putem selecta culoarea chenarului: &lt;h1 style="border:2px solid
+        rgb(241, 123, 102);">Titlu&lt;/h1>.
+      </p>
+    </section>
+    <section>
+      <h2>Background CSS</h2>
+      <p>
+        Proprietățile de fundal CSS sunt folosite pentru a adăuga efecte de
+        fundal pentru elemente. <br />Proprietatea background-color specifică
+        culoarea de fundal a unui element. <br />
+        Proprietatea background-image specifică o imagine de utilizat ca fundal
+        al unui element. Afișarea imaginii de fundal o singură dată este
+        specificată de proprietatea background-repeat, <br />Proprietatea
+        background-attachment specifică dacă imaginea de fundal trebuie să
+        deruleze sau să fie fixată (nu va derula cu restul paginii). Putem
+        folosi valorile <span>"fixed"</span> si <span>"scroll"</span>.
+        <br />Proprietatea background-position seteaza pozitia pe care o va lua.
+        Un exemplu ar putea fi <span>right top</span>.
+      </p>
+    </section>
+    <section>
+      <h2>Borders CSS</h2>
+      <p>
+        Proprietățile marginii CSS vă permit să specificați stilul, lățimea și
+        culoarea chenarului unui element. <br />Proprietatea
+        <span>border-style</span> specifică ce fel de chenar să fie afișat. Sunt
+        permise următoarele valori:
+      </p>
+      <ul class="flex-container" style="color: white">
+        <li class="borderList">dotted- Definește un chenar punctat</li>
+        <p style="border-style: dotted">Text scris cu dotted</p>
+        <li class="borderList">dashed- Definește o chenar întreruptă</li>
+        <p style="border-style: dashed">Text scris cu dashed</p>
+        <li class="borderList">solid- Definește un chenar solid</li>
+        <p style="border-style: solid">Text scris cu solid</p>
+        <li class="borderList">double- Definește o chenar dublu</li>
+        <p style="border-style: double">Text scris cu double</p>
+        <li class="borderList">
+          groove- Definește un chenar canelat 3D. Efectul depinde de valoarea
+          culorii chenarului
+        </li>
+        <p style="border-style: groove">Text scris cu groove</p>
+        <li class="borderList">
+          ridge- Definește o chenar crestat 3D. Efectul depinde de valoarea
+          culorii chenarului
+        </li>
+        <p style="border-style: ridge">Text scris cu ridge</p>
+        <li class="borderList">
+          inset- Definește un chenar 3D încorporat. Efectul depinde de valoarea
+          culorii chenarului
+        </li>
+        <p style="border-style: inset">Text scris cu inset</p>
+        <li class="borderList">
+          outset- Definește o margine de început 3D. Efectul depinde de valoarea
+          culorii chenarului
+        </li>
+        <p style="border-style: outset">Text scris cu outset</p>
+        <li class="borderList">none- Nu definește nici o graniță</li>
+        <p style="border-style: none">Text scris cu none</p>
+        <li class="borderList">hidden- Definește o chenar ascuns</li>
+        <p style="border-style: hidden">Text scris cu hidden</p>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Flexbox</h2>
+
+      <p>
+        DISPLAY: aceasta definește un container flexibil; inline sau bloc în
+        funcție de valoarea dată. Permite un context flexibil pentru toți copiii
+        săi direcți.
+      </p>
+      <p>
+        FLEX-DIRECTION: aceasta stabilește axa principală, definind astfel
+        direcția în care articolele flexibile sunt plasate în containerul
+        flexibil. Flexbox este (pe lângă împachetarea opțională) un concept de
+        aspect cu o singură direcție. Gândiți-vă la articolele flexibile ca
+        fiind așezate în principal fie în rânduri orizontale, fie în coloane
+        verticale. Ca si valori posibile avem:
+        <span>row, row-reverse, column, column-reverse</span>
+      </p>
+      <p>
+        FLEX-WRAP: În mod implicit, elementele flexibile vor încerca toate să se
+        potrivească pe o singură linie. Puteți modifica acest lucru și permite
+        articolelor să se împacheteze după cum este necesar cu această
+        proprietate.
+      </p>
+      <ul>
+        <li>
+          <span>nowrap</span>(implicit): toate elementele flexibile vor fi pe o
+          singură linie
+        </li>
+        <li>
+          <span> wrap</span>: articolele flex se vor înfășura pe mai multe
+          linii, de sus în jos.
+        </li>
+        <li>
+          <span>wrap-reverse</span>: articolele flex se vor înfășura pe mai
+          multe linii de jos în sus.
+        </li>
+      </ul>
+      <p>
+        JUSTIFY-CONTENT: Aceasta definește alinierea de-a lungul axei
+        principale. Ajută la distribuirea spațiului liber suplimentar rămas
+        atunci când fie toate elementele flexibile de pe o linie sunt
+        inflexibile, fie sunt flexibile, dar au atins dimensiunea maximă. De
+        asemenea, exercită un anumit control asupra alinierii elementelor atunci
+        când depășesc linia. Valorile ce pot fi atribuite sunt:
+      </p>
+      <ul>
+        <li>flex-start:</li>
+        <div class="justifyContent">
+          <p class="item item1">EXEMPLU</p>
+          <p class="item item2">JUSTIFY</p>
+          <p class="item item3">CONTENT</p>
+        </div>
+        <br />
+        <li>flex-end:</li>
+        <div class="justifyContent end">
+          <p class="item item1">EXEMPLU</p>
+          <p class="item item2">JUSTIFY</p>
+          <p class="item item3">CONTENT</p>
+        </div>
+        <br />
+        <li>center:</li>
+        <div class="justifyContent center1">
+          <p class="item item1">EXEMPLU</p>
+          <p class="item item2">JUSTIFY</p>
+          <p class="item item3">CONTENT</p>
+        </div>
+        <br />
+        <li>space-between:</li>
+        <div class="justifyContent space1">
+          <p class="item item1">EXEMPLU</p>
+          <p class="item item2">JUSTIFY</p>
+          <p class="item item3">CONTENT</p>
+        </div>
+        <br />
+        <li>space-around:</li>
+        <div class="justifyContent space2">
+          <p class="item item1">EXEMPLU</p>
+          <p class="item item2">JUSTIFY</p>
+          <p class="item item3">CONTENT</p>
+        </div>
+        <br />
+        <li>space-evenly:</li>
+        <div class="justifyContent space3">
+          <p class="item item1">EXEMPLU</p>
+          <p class="item item2">JUSTIFY</p>
+          <p class="item item3">CONTENT</p>
+        </div>
+      </ul>
+      <p>
+        ALIGN-ITEMS: Aceasta definește comportamentul implicit pentru modul în
+        care elementele flexibile sunt așezate de-a lungul axei transversale pe
+        linia curentă. Gândiți-vă la ea ca la justify-content, versiunea pentru
+        axa transversală (perpendiculară pe axa principală).
+        <br />Valorile ce pot fi atribuite sunt:
+      </p>
+
+      <ul>
+        <li>flex-start</li>
+        <div class="alignItems">
+          <p class="alignItem">
+            Modulul Flexbox Layout(Cutie flexibilă) ( o recomandare a
+            candidatului W3C din octombrie 2017) urmărește să ofere o modalitate
+            mai eficientă de a aranja, alinia și distribui spațiul între
+            articolele dintr-un container, chiar și atunci când dimensiunea
+            acestora este necunoscută și/sau dinamică (deci, cuvântul „flex”).
+          </p>
+          <p class="alignItem">
+            Ideea principală din spatele aspectului flexibil este de a oferi
+            containerului capacitatea de a modifica lățimea/înălțimea
+            articolelor (și ordinea) pentru a umple cel mai bine spațiul
+            disponibil (mai ales pentru a se adapta la toate tipurile de
+            dispozitive de afișare și dimensiuni de ecran). Un container
+            flexibil extinde articolele pentru a umple spațiul liber disponibil
+            sau le micșorează pentru a preveni debordarea.
+          </p>
+          <p class="alignItem">
+            Cel mai important, aspectul flexbox este independent de direcție,
+            spre deosebire de aspectele obișnuite (blocul care este pe verticală
+            și inline care este pe orizontală). În timp ce acestea funcționează
+            bine pentru pagini, le lipsește flexibilitatea (fără joc de cuvinte)
+            pentru a suporta aplicații mari sau complexe (mai ales când vine
+            vorba de schimbarea orientării, redimensionarea, întinderea,
+            micșorarea etc.).
+          </p>
+          <p class="alignItem">
+            Notă: Aspectul Flexbox este cel mai potrivit pentru componentele
+            unei aplicații și layout-urile la scară mică, în timp ce aspectul
+            Grid este destinat layout-urilor la scară mai mare.
+          </p>
+          <br />
+        </div>
+        <li>flex-end</li>
+        <div class="alignItems flexEnd">
+          <p class="alignItem">
+            Modulul Flexbox Layout(Cutie flexibilă) ( o recomandare a
+            candidatului W3C din octombrie 2017) urmărește să ofere o modalitate
+            mai eficientă de a aranja, alinia și distribui spațiul între
+            articolele dintr-un container, chiar și atunci când dimensiunea
+            acestora este necunoscută și/sau dinamică (deci, cuvântul „flex”).
+          </p>
+          <p class="alignItem">
+            Ideea principală din spatele aspectului flexibil este de a oferi
+            containerului capacitatea de a modifica lățimea/înălțimea
+            articolelor (și ordinea) pentru a umple cel mai bine spațiul
+            disponibil (mai ales pentru a se adapta la toate tipurile de
+            dispozitive de afișare și dimensiuni de ecran). Un container
+            flexibil extinde articolele pentru a umple spațiul liber disponibil
+            sau le micșorează pentru a preveni debordarea.
+          </p>
+          <p class="alignItem">
+            Cel mai important, aspectul flexbox este independent de direcție,
+            spre deosebire de aspectele obișnuite (blocul care este pe verticală
+            și inline care este pe orizontală). În timp ce acestea funcționează
+            bine pentru pagini, le lipsește flexibilitatea (fără joc de cuvinte)
+            pentru a suporta aplicații mari sau complexe (mai ales când vine
+            vorba de schimbarea orientării, redimensionarea, întinderea,
+            micșorarea etc.).
+          </p>
+          <p class="alignItem">
+            Notă: Aspectul Flexbox este cel mai potrivit pentru componentele
+            unei aplicații și layout-urile la scară mică, în timp ce aspectul
+            Grid este destinat layout-urilor la scară mai mare.
+          </p>
+        </div>
+        <li>center:</li>
+        <div class="alignItems alignCenter">
+          <p class="alignItem">
+            Modulul Flexbox Layout(Cutie flexibilă) ( o recomandare a
+            candidatului W3C din octombrie 2017) urmărește să ofere o modalitate
+            mai eficientă de a aranja, alinia și distribui spațiul între
+            articolele dintr-un container, chiar și atunci când dimensiunea
+            acestora este necunoscută și/sau dinamică (deci, cuvântul „flex”).
+          </p>
+          <p class="alignItem">
+            Ideea principală din spatele aspectului flexibil este de a oferi
+            containerului capacitatea de a modifica lățimea/înălțimea
+            articolelor (și ordinea) pentru a umple cel mai bine spațiul
+            disponibil (mai ales pentru a se adapta la toate tipurile de
+            dispozitive de afișare și dimensiuni de ecran). Un container
+            flexibil extinde articolele pentru a umple spațiul liber disponibil
+            sau le micșorează pentru a preveni debordarea.
+          </p>
+          <p class="alignItem">
+            Cel mai important, aspectul flexbox este independent de direcție,
+            spre deosebire de aspectele obișnuite (blocul care este pe verticală
+            și inline care este pe orizontală). În timp ce acestea funcționează
+            bine pentru pagini, le lipsește flexibilitatea (fără joc de cuvinte)
+            pentru a suporta aplicații mari sau complexe (mai ales când vine
+            vorba de schimbarea orientării, redimensionarea, întinderea,
+            micșorarea etc.).
+          </p>
+          <p class="alignItem">
+            Notă: Aspectul Flexbox este cel mai potrivit pentru componentele
+            unei aplicații și layout-urile la scară mică, în timp ce aspectul
+            Grid este destinat layout-urilor la scară mai mare.
+          </p>
+        </div>
+        <li>stretch:</li>
+        <div class="alignItems alignStretch">
+          <p class="alignItem">
+            Modulul Flexbox Layout(Cutie flexibilă) ( o recomandare a
+            candidatului W3C din octombrie 2017) urmărește să ofere o modalitate
+            mai eficientă de a aranja, alinia și distribui spațiul între
+            articolele dintr-un container, chiar și atunci când dimensiunea
+            acestora este necunoscută și/sau dinamică (deci, cuvântul „flex”).
+          </p>
+          <p class="alignItem">
+            Ideea principală din spatele aspectului flexibil este de a oferi
+            containerului capacitatea de a modifica lățimea/înălțimea
+            articolelor (și ordinea) pentru a umple cel mai bine spațiul
+            disponibil (mai ales pentru a se adapta la toate tipurile de
+            dispozitive de afișare și dimensiuni de ecran). Un container
+            flexibil extinde articolele pentru a umple spațiul liber disponibil
+            sau le micșorează pentru a preveni debordarea.
+          </p>
+          <p class="alignItem">
+            Cel mai important, aspectul flexbox este independent de direcție,
+            spre deosebire de aspectele obișnuite (blocul care este pe verticală
+            și inline care este pe orizontală). În timp ce acestea funcționează
+            bine pentru pagini, le lipsește flexibilitatea (fără joc de cuvinte)
+            pentru a suporta aplicații mari sau complexe (mai ales când vine
+            vorba de schimbarea orientării, redimensionarea, întinderea,
+            micșorarea etc.).
+          </p>
+          <p class="alignItem">
+            Notă: Aspectul Flexbox este cel mai potrivit pentru componentele
+            unei aplicații și layout-urile la scară mică, în timp ce aspectul
+            Grid este destinat layout-urilor la scară mai mare.
+          </p>
+        </div>
+        <li>baseline:</li>
+        <div class="alignItems alignBaseline">
+          <p class="alignItem">
+            Modulul Flexbox Layout(Cutie flexibilă) ( o recomandare a
+            candidatului W3C din octombrie 2017) urmărește să ofere o modalitate
+            mai eficientă de a aranja, alinia și distribui spațiul între
+            articolele dintr-un container, chiar și atunci când dimensiunea
+            acestora este necunoscută și/sau dinamică (deci, cuvântul „flex”).
+          </p>
+          <p class="alignItem">
+            Ideea principală din spatele aspectului flexibil este de a oferi
+            containerului capacitatea de a modifica lățimea/înălțimea
+            articolelor (și ordinea) pentru a umple cel mai bine spațiul
+            disponibil (mai ales pentru a se adapta la toate tipurile de
+            dispozitive de afișare și dimensiuni de ecran). Un container
+            flexibil extinde articolele pentru a umple spațiul liber disponibil
+            sau le micșorează pentru a preveni debordarea.
+          </p>
+          <p class="alignItem textModificat">
+            Cel mai important, aspectul flexbox este independent de direcție,
+            spre deosebire de aspectele obișnuite (blocul care este pe verticală
+            și inline care este pe orizontală). În timp ce acestea funcționează
+            bine pentru pagini, le lipsește flexibilitatea (fără joc de cuvinte)
+            pentru a suporta aplicații mari sau complexe (mai ales când vine
+            vorba de schimbarea orientării, redimensionarea, întinderea,
+            micșorarea etc.).
+          </p>
+          <p class="alignItem">
+            Notă: Aspectul Flexbox este cel mai potrivit pentru componentele
+            unei aplicații și layout-urile la scară mică, în timp ce aspectul
+            Grid este destinat layout-urilor la scară mai mare.
+          </p>
+        </div>
+      </ul>
+      <p>
+        ALIGN-CONTENT: Acest lucru aliniază liniile unui container flexibil
+        atunci când există spațiu suplimentar pe axa transversală, similar
+        modului în care justify-content se aliniază articolele individuale în
+        axa principală.<br />
+        Notă: această proprietate are efect numai pentru containerele flexibile
+        cu mai multe linii, unde flex-wrap este setată la fie wrap sau
+        wrap-reverse). Un container flexibil cu o singură linie (adică unde
+        flex-wrap este setat la valoarea implicită, no-wrap) nu va reflecta
+        align-content.
+        <br />Valorile ce pot fi atribuite sunt:
+      </p>
+      <ul>
+        <span
+          ><li>flex-start;</li>
+          <li>flex-end;</li>
+          <li>center;</li>
+          <li>stretch;</li>
+          <li>space-between;</li>
+          <li>space-around.</li></span
+        >
+      </ul>
+      <!-- <ul>
+        <li>flex-start</li>
+        <div class="alignContent contentEnd">
+          <p class="contentItem">
+            normal (default): items are packed in their default position as if
+            no value was set.
+          </p>
+          <p class="contentItem">
+            flex-start / start: items packed to the start of the container.
+          </p>
+          <p class="contentItem">
+            flex-end / end: items packed to the end of the container. The (more
+            support) flex-end honors the flex-direction while end honors the
+            writing-mode direction.
+          </p>
+          <p class="contentItem">center: items centered in the container</p>
+          <p class="contentItem">
+            space-between: items evenly distributed; the first line is at the
+            start of the container while the last one is at the end
+          </p>
+          <p class="contentItem">
+            space-around: items evenly distributed with equal space around each
+            line
+          </p>
+          <p class="contentItem">
+            stretch: lines stretch to take up the remaining space
+          </p>
+        </div>
+        <li>flex-end:</li>
+        <div class="alignContent">
+          <p class="contentItem">
+            normal (default): items are packed in their default position as if
+            no value was set.
+          </p>
+          <p class="contentItem">
+            flex-start / start: items packed to the start of the container.
+          </p>
+          <p class="contentItem">
+            flex-end / end: items packed to the end of the container. The (more
+            support) flex-end honors the flex-direction while end honors the
+            writing-mode direction.
+          </p>
+          <p class="contentItem">center: items centered in the container</p>
+          <p class="contentItem">
+            space-between: items evenly distributed; the first line is at the
+            start of the container while the last one is at the end
+          </p>
+          <p class="contentItem">
+            space-around: items evenly distributed with equal space around each
+            line
+          </p>
+          <p class="contentItem">
+            stretch: lines stretch to take up the remaining space
+          </p>
+        </div>
+      </ul> -->
+      <p>
+        GAP, ROW-GAP, COLUMN-GAP: Aceasta proprietate controleaza spatiul dintre
+        elementele flexibile.
+      </p>
+      <ul>
+        <li>gap:</li>
+        <div class="gapClass">
+          <p class="gapItem">gap:</p>
+          <p class="gapItem">40px</p>
+        </div>
+
+        <div class="gapClass gap2">
+          <p class="gapItem">gap:</p>
+          <p class="gapItem">100px</p>
+        </div>
+      </ul>
+    </section>
+  </body>
+</html>
