@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="navigation">
+      <ul>
+        <li><a href="index.html">GitBash</a></li>
+      </ul>
+    </div>
+    <h1>GitHub</h1>
+    <p>
+      Git este sistemul de control al versiunilor distribuit gratuit și cu sursă
+      deschisă, care este responsabil pentru tot ce este GitHub legate de ceea
+      ce se întâmplă local pe computerul dvs. Această foaie de trucuri prezintă
+      cele mai importante și frecvente a folosit comenzi Git pentru o referință
+      ușoară.
+    </p>
+    <h3>Pasul 1</h3>
+    <p>
+      Configurarea informațiilor despre utilizator utilizate în toate depozitele
+      locale:
+    </p>
+    <div class="ContainerHub">
+      <p class="itemHub">
+        git config --global user.name „[prenume nume]” <br />setați un nume care
+        poate fi identificat pentru credit atunci când examinați istoricul
+        versiunilor
+      </p>
+      <p class="itemHub">
+        git config --global user.email „[valid-email]” <br />
+        setați o adresă de e-mail care va fi asociată fiecărui marcator istoric
+      </p>
+      <p class="itemHub">
+        git config --global color.ui<br />
+        auto setați colorarea automată a liniei de comandă pentru Git pentru o
+        revizuire ușoară
+      </p>
+    </div>
+    <h3>Setup & Init</h3>
+    <p>
+      Configurarea informațiilor despre utilizator, inițializarea și clonarea
+      depozitelor
+    </p>
+    <div class="containerHub">
+      <p class="itemHub">
+        git init<br />
+        inițializați un director existent ca depozit Git
+      </p>
+      <p class="itemHub">
+        clona git [url]<br />
+        preluați un întreg depozit dintr-o locație găzduită prin intermediul
+        URL-ului
+      </p>
+    </div>
+    <h3>STAGE & SNAPSHOT</h3>
+    <p>Lucrul cu snapshot și zona de pregătire Git</p>
+    <div class="containerHub">
+      <p class="itemHub">
+        git status<br />
+        afișați fișierele modificate în directorul de lucru, pregătite pentru
+        următoarea dvs. comitere
+      </p>
+      <p class="itemHub">
+        git add [file]<br />
+        adăugați un fișier așa cum arată acum la următoarea comitere (etapă)
+      </p>
+      <p class="itemHub">
+        git reset [file]<br />dezactivați un fișier, păstrând modificările în
+        directorul de lucru
+      </p>
+      <p class="itemHub">
+        git diff<br />diferență de ceea ce este schimbat, dar nu este pus în
+        scenă
+      </p>
+      <p class="itemHub">
+        git diff --staged<br />diferă de ceea ce este pus în scenă, dar încă nu
+        s-a comis
+      </p>
+      <p class="itemHub">
+        git commit -m “[descriptive message]”<br />comite conținutul tău în
+        scenă ca un nou instantaneu de comitere
+      </p>
+    </div>
+
+    <!-- <div class="flexExemplu">
+      <p class="borderExemplu">primu text</p>
+
+      <p class="borderExemplu">al doilea paragaf</p>
+    </div> -->
+  </body>
+</html>
