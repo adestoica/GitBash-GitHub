@@ -1,0 +1,361 @@
+.navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(0, 0, 0);
+  z-index: 2;
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  position: sticky;
+  top: 0px;
+}
+.navigation ul {
+  display: flex;
+  padding: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.navigation li:hover {
+  cursor: pointer;
+}
+
+.titleHtml {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: "Castoro Titling", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  color: rgb(94, 197, 94);
+}
+a {
+  color: rgb(184, 207, 116);
+}
+
+span {
+  color: #de0707;
+  font-weight: bold;
+}
+
+.buttonSend {
+  background-image: linear-gradient(red, rgb(222, 176, 176));
+}
+
+html {
+  padding: 20px;
+  /* background-color: rgb(117, 178, 133); */
+  font-family: "Vesper Libre", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+}
+.border-red {
+  border: 2px solid rgb(46, 5, 56);
+  /* background-color: rgba(123, 181, 114, 0.5); */
+  width: 200px;
+  padding: 25px;
+  border-style: dotted;
+  border-radius: 70px;
+  align-content: center;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 13px;
+  align-items: stretch;
+  justify-content: space-evenly;
+  list-style: none;
+  color: #000000;
+}
+
+/* @media screen and (max-width: 900px) .navigation {
+    display: flex;
+  } */
+
+html,
+body {
+  background-image: linear-gradient(#000000, rgb(63, 59, 74), rgb(0, 0, 0));
+}
+.imagineLogo {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.imagineLogo img {
+  display: block;
+  width: 100%;
+}
+
+.imagineCSS {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.imagineCSS {
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 300px) {
+  .imagineLogo {
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .imagineLogo {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .imagineLogo {
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .imagineLogo {
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .imagineLogo {
+    height: 600px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .imagineLogo {
+    height: 700px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .imagineLogo {
+    height: 800px;
+  }
+}
+.imagineCSS {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.imagineCSS {
+  display: block;
+  width: 100%;
+}
+@media only screen and (min-width: 400px) {
+  .imagineCSS {
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .imagineCSS {
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .imagineCSS {
+    height: 600px;
+  }
+}
+@media only screen and (min-width: 1650px) {
+  .imagineCSS {
+    height: 800px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .imagineCSS {
+    height: 900px;
+  }
+}
+.tableText {
+  text-align: center;
+}
+.tableText thead {
+  color: rgb(3, 13, 6);
+}
+.dotted {
+  border-style: dotted;
+}
+.borderList {
+  display: flex;
+  border: 2px solid rgb(0, 0, 0);
+  width: 45%;
+  padding: 25px;
+  align-content: center;
+  background-image: linear-gradient(#550e5b, rgba(206, 56, 225, 0.5));
+  border-radius: 5%;
+  justify-content: space-evenly;
+}
+
+.borderList p {
+  align-content: center;
+  text-align: center;
+  width: 20%;
+}
+.justifyContent {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  background-color: rgb(79, 14, 86);
+  border-radius: px;
+}
+.item {
+  display: flex;
+  border: 3px solid rgb(71, 6, 82);
+  width: 80px;
+  background-color: rgb(242, 255, 0);
+  padding: 15px;
+  margin: 10px;
+  color: black;
+}
+.justifyContent.end {
+  display: flex;
+  justify-content: flex-end;
+}
+.justifyContent.center1 {
+  display: flex;
+  justify-content: center;
+}
+.justifyContent.space1 {
+  display: flex;
+  justify-content: space-between;
+}
+.justifyContent.space2 {
+  display: flex;
+  justify-content: space-around;
+}
+.justifyContent.space3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.alignItems {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+  background-color: rgb(79, 14, 86);
+  border-radius: px;
+}
+
+.alignItem {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20%;
+  font-size: 15px;
+  border: 3px solid rgb(71, 6, 82);
+  background-color: rgb(242, 255, 0);
+  padding: 15px;
+  margin: 10px;
+  color: black;
+  gap: 10%;
+}
+.alignItems.flexEnd {
+  align-items: flex-end;
+}
+.alignItems.alignCenter {
+  align-items: center;
+}
+.alignItems.alignStretch {
+  align-items: stretch;
+}
+.alignItems.alignBaseline {
+  align-items: baseline;
+}
+.textModificat {
+  width: 150px;
+}
+/* .alignContent {
+    align-content: space-around;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    background-color: rgb(79, 14, 86);
+    border-radius: px;
+  }
+  .contentItem {
+    align-content: space-around;
+    display: flex;
+    font-size: 12px;
+    border: 3px solid rgb(71, 6, 82);
+    background-color: rgb(242, 255, 0);
+    padding: 30px;
+    margin: 10px;
+    color: black;
+    flex-shrink: 3;
+    gap: 10%;
+  } */
+.gapClass {
+  display: flex;
+  gap: 40px;
+}
+.gapItem {
+  display: flex;
+
+  display: flex;
+  font-size: 30px;
+  border: 3px solid rgb(71, 6, 82);
+  background-color: rgb(242, 255, 0);
+  padding: 30px;
+  margin: 10px;
+  color: black;
+  flex-shrink: 3;
+}
+.gapClass.gap2 {
+  display: flex;
+  gap: 100px;
+}
+
+.flexContainerBash {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.itemsUl {
+  display: flex;
+  border: 2px solid rgb(12, 33, 4);
+  border-radius: 10px;
+  background-color: rgb(153, 212, 153);
+  width: 100px;
+  font-size: 20px;
+  width: 20%;
+  padding: 20px;
+}
+
+.containerHub {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.itemHub {
+  display: flex;
+  background-color: rgb(132, 186, 116);
+  border: 2px solid black;
+  width: 30%;
+  align-content: center;
+}
