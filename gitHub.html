@@ -14,178 +14,204 @@
       <li><a href="css.html">CSS</a></li>
       <li><a href="gitbash.html">GitBash</a></li>
     </ul>
-    <h1>GitHub</h1>
-    <p>
-      GitHub este o platformă pentru dezvoltatori care le permite
-      dezvoltatorilor să creeze, să stocheze, să gestioneze și să partajeze
-      codul lor. Utilizează software- ul Git , oferind controlul versiunilor
-      distribuite de Git plus controlul accesului , urmărirea erorilor ,
-      solicitările de funcții software , managementul sarcinilor , integrarea
-      continuă și wiki-uri pentru fiecare proiect.
-    </p>
-    <h3>SETUP</h3>
-    <p>
-      Configurarea informațiilor despre utilizator utilizate în toate depozitele
-      locale:
-    </p>
-    <div class="ContainerHub">
-      <p class="itemHub">
-        git config --global user.name „[prenume nume]” <br />setați un nume care
-        poate fi identificat pentru credit atunci când examinați istoricul
-        versiunilor
-      </p>
-      <p class="itemHub">
-        git config --global user.email „[valid-email]” <br />
-        setați o adresă de e-mail care va fi asociată fiecărui marcator istoric
-      </p>
-      <p class="itemHub">
-        git config --global color.ui auto <br />setați colorarea automată a
-        liniei de comandă pentru Git pentru o revizuire ușoară
-      </p>
-    </div>
-    <h3>SETUP & INIT</h3>
-    <p>
-      Configurarea informațiilor despre utilizator, inițializarea și clonarea
-      depozitelor
-    </p>
-    <div class="containerHub">
-      <p class="itemHub">
-        git init<br />
-        inițializați un director existent ca depozit Git
-      </p>
-      <p class="itemHub">
-        clona git [url]<br />
-        preluați un întreg depozit dintr-o locație găzduită prin intermediul
-        URL-ului
-      </p>
-    </div>
-    <h3>STAGE & SNAPSHOT</h3>
-    <p>Lucrul cu snapshot și zona de pregătire Git</p>
-    <div class="containerHub">
-      <p class="itemHub">
-        git status<br />
-        afișați fișierele modificate în directorul de lucru, pregătite pentru
-        următoarea dvs. comitere
-      </p>
-      <p class="itemHub">
-        git add [file]<br />
-        adăugați un fișier așa cum arată acum la următoarea comitere (etapă)
-      </p>
-      <p class="itemHub">
-        git reset [file]<br />dezactivați un fișier, păstrând modificările în
-        directorul de lucru
-      </p>
-      <p class="itemHub">
-        git diff<br />diferență de ceea ce este schimbat, dar nu este pus în
-        scenă
-      </p>
-      <p class="itemHub">
-        git diff --staged<br />diferă de ceea ce este pus în scenă, dar încă nu
-        s-a comis
-      </p>
-      <p class="itemHub">
-        git commit -m “[descriptive message]”<br />comite conținutul tău în
-        scenă ca un nou instantaneu de comitere
-      </p>
-    </div>
-    <h3>BRANCH & MERGE</h3>
-    <p>
-      Izolarea muncii în ramuri, schimbarea contextului și integrarea
-      schimbărilor
-    </p>
-    <div class="containerHub">
-      <p class="itemHub">
-        git branch<br />enumerați-vă filialele. un * va apărea lângă ramura
-        activă în prezent
-      </p>
-      <p class="itemHub">
-        git branch [branch-name]<br />creați o nouă ramură la commit-ul curent
-      </p>
-      <p class="itemHub">
-        git checkout<br />
-        treceți la o altă ramură și verificați-o în directorul dvs. de lucru
-      </p>
-      <p class="itemHub">
-        git merge [branch]<br />îmbina istoricul ramurei specificate în cea
-        curenta
-      </p>
-      <p class="itemHub">
-        git log<br />
-        afișează toate modificarile din istoria filialei curente
-      </p>
-    </div>
-    <h3>INSPECT & COMPARE</h3>
-    <p>Examinarea jurnalelor, diferențelor și informațiilor despre obiect.</p>
-    <div class="containerHub">
-      <p class="itemHub">
-        git log <br />afișează istoricul modificarilor pentru ramura activă în
-        prezent
-      </p>
-      <p class="itemHub">
-        git log branchB..branchA<br />arata commit-urile de pe branchA care nu
-        sunt pe branchB
-      </p>
-      <p class="itemHub">
-        git log --follow [file]<br />arată commit-urile care au schimbat
-        fișierul, chiar și în rândul redenumirilor
-      </p>
-      <p class="itemHub">
-        git diff branchB...branchA<br />arata diferenta dintre ceea ce este in
-        branchA si care nu este in branchB
-      </p>
-      <p class="itemHub">
-        git show [SHA]<br />
-        afișeaza orice obiect în Git în format care poate fi citit de om
-      </p>
-    </div>
-    <h3>TRACKING PATH CHANGES</h3>
-    <p>Fișierul de versiuni este eliminat și calea se modifică</p>
-    <div class="containerHub">
-      <p class="itemHub">
-        git rm [file]<br />
-        ștergeți fișierul din proiect și etapa de eliminare pentru commit
-      </p>
-      <p class="itemHub">git mv [existing-path] [new-path]<br /></p>
-      <p class="itemHub">
-        git mv [existing-path] [new-path]<br />
-        modificați o cale de fișier existentă și puneți-o in stage mutarea
-      </p>
-      <p class="itemHub">
-        git log --stat -M<br />
-        arată toate jurnalele de comitere cu indicarea oricăror căi care s-au
-        mutat
-      </p>
-    </div>
-    <h3>SHARE & UPDATE</h3>
-    <p>
-      Preluarea actualizărilor dintr-un alt depozit și actualizarea depozitelor
-      locale
-    </p>
-    <div class="containerHub">
-      <p class="itemHub">
-        git remote add [alias] [url]<br />
-        adăugați o adresă URL git ca alias
+    <section>
+      <h1>GitHub</h1>
+      <p>
+        GitHub este o platformă pentru dezvoltatori care le permite
+        dezvoltatorilor să creeze, să stocheze, să gestioneze și să partajeze
+        codul lor. Utilizează software- ul Git , oferind controlul versiunilor
+        distribuite de Git plus controlul accesului , urmărirea erorilor ,
+        solicitările de funcții software , managementul sarcinilor , integrarea
+        continuă și wiki-uri pentru fiecare proiect.
       </p>
 
-      <p class="itemHub">
-        git fetch [alias]<br />
-        luați toate ramurile de la acel remote Git
+      <h3>SETUP</h3>
+      <p>
+        Configurarea informațiilor despre utilizator utilizate în toate
+        depozitele locale:
       </p>
-      <p class="itemHub">
-        git merge [alias]/[branch]<br />
-        îmbina o ramură la distanță în ramura curentă pentru a o actualiza
+      <div class="ContainerHub">
+        <p class="itemHub">
+          git config --global user.name „[prenume nume]” <br />setați un nume
+          care poate fi identificat pentru credit atunci când examinați
+          istoricul versiunilor
+        </p>
+        <p class="itemHub">
+          git config --global user.email „[valid-email]” <br />
+          setați o adresă de e-mail care va fi asociată fiecărui marcator
+          istoric
+        </p>
+        <p class="itemHub">
+          git config --global color.ui auto <br />setați colorarea automată a
+          liniei de comandă pentru Git pentru o revizuire ușoară
+        </p>
+      </div>
+      <h3>SETUP & INIT</h3>
+      <p>
+        Configurarea informațiilor despre utilizator, inițializarea și clonarea
+        depozitelor
       </p>
-      <p class="itemHub">
-        git push [alias] [branch]<br />
-        Transmite commit-urile de ramuri locale către ramura depozitului de la
-        distanță
+      <div class="containerHub">
+        <p class="itemHub">
+          git init<br />
+          inițializați un director existent ca depozit Git
+        </p>
+        <p class="itemHub">
+          clona git [url]<br />
+          preluați un întreg depozit dintr-o locație găzduită prin intermediul
+          URL-ului
+        </p>
+      </div>
+      <h3>STAGE & SNAPSHOT</h3>
+      <p>Lucrul cu snapshot și zona de pregătire Git</p>
+      <div class="containerHub">
+        <p class="itemHub">
+          git status<br />
+          afișați fișierele modificate în directorul de lucru, pregătite pentru
+          următoarea dvs. comitere
+        </p>
+        <p class="itemHub">
+          git add [file]<br />
+          adăugați un fișier așa cum arată acum la următoarea comitere (etapă)
+        </p>
+        <p class="itemHub">
+          git reset [file]<br />dezactivați un fișier, păstrând modificările în
+          directorul de lucru
+        </p>
+        <p class="itemHub">
+          git diff<br />diferență de ceea ce este schimbat, dar nu este pus în
+          scenă
+        </p>
+        <p class="itemHub">
+          git diff --staged<br />diferă de ceea ce este pus în scenă, dar încă
+          nu s-a comis
+        </p>
+        <p class="itemHub">
+          git commit -m “[descriptive message]”<br />comite conținutul tău în
+          scenă ca un nou instantaneu de comitere
+        </p>
+      </div>
+      <h3>BRANCH & MERGE</h3>
+      <p>
+        Izolarea muncii în ramuri, schimbarea contextului și integrarea
+        schimbărilor
       </p>
-      <p class="itemHub">
-        git pull<br />
-        preluați și îmbinați orice comitere din ramura de urmărire la distanță
+      <div class="containerHub">
+        <p class="itemHub">
+          git branch<br />enumerați-vă filialele. un * va apărea lângă ramura
+          activă în prezent
+        </p>
+        <p class="itemHub">
+          git branch [branch-name]<br />creați o nouă ramură la commit-ul curent
+        </p>
+        <p class="itemHub">
+          git checkout<br />
+          treceți la o altă ramură și verificați-o în directorul dvs. de lucru
+        </p>
+        <p class="itemHub">
+          git merge [branch]<br />îmbina istoricul ramurei specificate în cea
+          curenta
+        </p>
+        <p class="itemHub">
+          git log<br />
+          afișează toate modificarile din istoria filialei curente
+        </p>
+      </div>
+      <h3>INSPECT & COMPARE</h3>
+      <p>Examinarea jurnalelor, diferențelor și informațiilor despre obiect.</p>
+      <div class="containerHub">
+        <p class="itemHub">
+          git log <br />afișează istoricul modificarilor pentru ramura activă în
+          prezent
+        </p>
+        <p class="itemHub">
+          git log branchB..branchA<br />arata commit-urile de pe branchA care nu
+          sunt pe branchB
+        </p>
+        <p class="itemHub">
+          git log --follow [file]<br />arată commit-urile care au schimbat
+          fișierul, chiar și în rândul redenumirilor
+        </p>
+        <p class="itemHub">
+          git diff branchB...branchA<br />arata diferenta dintre ceea ce este in
+          branchA si care nu este in branchB
+        </p>
+        <p class="itemHub">
+          git show [SHA]<br />
+          afișeaza orice obiect în Git în format care poate fi citit de om
+        </p>
+      </div>
+      <h3>TRACKING PATH CHANGES</h3>
+      <p>Fișierul de versiuni este eliminat și calea se modifică</p>
+      <div class="containerHub">
+        <p class="itemHub">
+          git rm [file]<br />
+          ștergeți fișierul din proiect și etapa de eliminare pentru commit
+        </p>
+        <p class="itemHub">git mv [existing-path] [new-path]<br /></p>
+        <p class="itemHub">
+          git mv [existing-path] [new-path]<br />
+          modificați o cale de fișier existentă și puneți-o in stage mutarea
+        </p>
+        <p class="itemHub">
+          git log --stat -M<br />
+          arată toate jurnalele de comitere cu indicarea oricăror căi care s-au
+          mutat
+        </p>
+      </div>
+      <h3>SHARE & UPDATE</h3>
+      <p>
+        Preluarea actualizărilor dintr-un alt depozit și actualizarea
+        depozitelor locale
       </p>
-    </div>
+      <div class="containerHub">
+        <p class="itemHub">
+          git remote add [alias] [url]<br />
+          adăugați o adresă URL git ca alias
+        </p>
 
+        <p class="itemHub">
+          git fetch [alias]<br />
+          luați toate ramurile de la acel remote Git
+        </p>
+        <p class="itemHub">
+          git merge [alias]/[branch]<br />
+          îmbina o ramură la distanță în ramura curentă pentru a o actualiza
+        </p>
+        <p class="itemHub">
+          git push [alias] [branch]<br />
+          Transmite commit-urile de ramuri locale către ramura depozitului de la
+          distanță
+        </p>
+        <p class="itemHub">
+          git pull<br />
+          preluați și îmbinați orice comitere din ramura de urmărire la distanță
+        </p>
+      </div>
+    </section>
+    <section>
+      <h2>Key SSH</h2>
+      <p>Pentru a crea o cheie SSH, trebuie sa urmam mai multi pasi:</p>
+      <ol>
+        <li>Ne logam in contul nostru de GitHub.</li>
+        <li>Intram in <span>settings=>SSH and GPG keys</span>.</li>
+        <li>Apasam butonul <span>New SSH key</span>.</li>
+        <li>Completam <span>title</span>.</li>
+        <li>
+          In terminalul nostru, vom adauga sintaxa : ssh-keygen -t ed25519 -C
+          "your_email@example.com", iar apoi vom adauga o parola/key.
+        </li>
+        <li>
+          Tot in terminal, vom schimba directorul in .ssh, tastam "ls" pentru a
+          vedea id-ul pentru key, tastam "cat " si inseram adresa id-ului.
+        </li>
+        <li>
+          Adresa care va aparea in final o copiem si ne intoarcem pe platforma
+          GitHub, unde o vom lipi in casuta "key".
+        </li>
+        <li>Pasul final este sa apasam butonul "Add SSH key".</li>
+      </ol>
+    </section>
     <!-- <div class="flexExemplu">
       <p class="borderExemplu">primu text</p>
 
