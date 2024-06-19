@@ -189,31 +189,39 @@
         </p>
       </div>
     </section>
-    <section>
-      <h2>Key SSH</h2>
-      <p>Pentru a crea o cheie SSH, trebuie sa urmam mai multi pasi:</p>
-      <ol>
-        <li>Ne logam in contul nostru de GitHub.</li>
-        <li>Intram in <span>settings=>SSH and GPG keys</span>.</li>
-        <li>Apasam butonul <span>New SSH key</span>.</li>
-        <li>Completam <span>title</span>.</li>
-        <li>
-          In terminalul nostru, vom adauga sintaxa : ssh-keygen -t ed25519 -C
-          "your_email@example.com", iar apoi vom adauga o parola/key.
-        </li>
-        <li>
-          Tot in terminal, vom schimba directorul in .ssh, tastam "ls" pentru a
-          vedea id-ul pentru key, tastam "cat " si inseram adresa id-ului.
-        </li>
-        <li>
-          Adresa care va aparea in final o copiem si ne intoarcem pe platforma
-          GitHub, unde o vom lipi in casuta "key".
-        </li>
-        <li>Pasul final este sa apasam butonul "Add SSH key".</li>
-      </ol>
-      <img src="sshkey.jpg" alt="imagine SSHkey" />
-      <img src="terminalssh.jpg" alt="imagine termina" />
-    </section>
+
+    <h2>Key SSH</h2>
+    <p>Pentru a crea o cheie SSH, trebuie sa urmam urmatorii pasi:</p>
+    <div class="sshClass">
+      <div class="textSSH">
+        <ol>
+          <li class="itemSSH">Ne logam in contul nostru de GitHub.</li>
+          <li class="itemSSH">Intram in settings=>SSH and GPG keys.</li>
+          <li class="itemSSH">Apasam butonul New SSH key.</li>
+          <li class="itemSSH">Completam title.</li>
+          <li class="itemSSH">
+            In terminalul nostru, vom adauga sintaxa : ssh-keygen -t ed25519 -C
+            "your_email@example.com", iar apoi vom adauga o parola/key.
+          </li>
+          <li class="itemSSH">
+            Tot in terminal, vom schimba directorul in .ssh, tastam "ls" pentru
+            a vedea id-ul pentru key, tastam "cat " si inseram adresa id-ului.
+          </li>
+          <li class="itemSSH">
+            Adresa care va aparea in final o copiem si ne intoarcem pe platforma
+            GitHub, unde o vom lipi in casuta "key".
+          </li>
+          <li class="itemSSH">
+            Pasul final este sa apasam butonul "Add SSH key".
+          </li>
+        </ol>
+      </div>
+      <div class="imagesSSH">
+        <img src="sshkey.jpg" alt="imagine SSHkey" />
+
+        <img src="terminalssh.jpg" alt="imagine termina" />
+      </div>
+    </div>
     <!-- <div class="flexExemplu">
       <p class="borderExemplu">primu text</p>
 

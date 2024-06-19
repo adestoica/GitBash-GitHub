@@ -40,9 +40,12 @@
   font-style: normal;
 }
 
+h1,
+h3,
 h2 {
   color: rgb(94, 197, 94);
 }
+
 a {
   color: rgb(184, 207, 116);
 }
@@ -150,9 +153,25 @@ body {
 }
 @media only screen and (min-width: 1600px) {
   .imagineLogo {
-    height: 800px;
+    height: 850px;
   }
 }
+@media only screen and (min-width: 1800px) {
+  .imagineLogo {
+    height: 900px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .imagineLogo {
+    height: 1100px;
+  }
+}
+@media only screen and (min-width: 2300px) {
+  .imagineLogo {
+    height: 1200px;
+  }
+}
+
 .imagineCSS {
   position: relative;
   display: inline-block;
@@ -185,11 +204,12 @@ body {
     height: 800px;
   }
 }
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1800px) {
   .imagineCSS {
     height: 900px;
   }
 }
+
 .tableText {
   text-align: center;
 }
@@ -385,7 +405,6 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 5px;
 }
 
 .itemHub {
@@ -394,4 +413,31 @@ html {
   border: 2px solid black;
   width: 30%;
   align-content: center;
+  color: black;
+}
+.sshClass {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.imagesSSH img {
+  width: 600px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.textSSH {
+  display: flex;
+  color: black;
+  justify-content: stretch;
+}
+.itemSSH {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  background-color: rgb(132, 186, 116);
+  border: 2px solid black;
+  width: 95%;
+
+  align-content: center;
+  padding: 10px;
 }
