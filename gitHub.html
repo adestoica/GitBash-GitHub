@@ -25,6 +25,114 @@
         continuă și wiki-uri pentru fiecare proiect.
       </p>
 
+      <section>
+        <h2>Create a new repository</h2>
+        <p>Pentru a crea un nou repository, trebuie sa urmam urmatorii pasi:</p>
+        <div class="repositoryContainer">
+          <div class="repositoryText">
+            <ul>
+              <li class="repositoryList">LOG-IN</li>
+              <li class="repositoryList">YOUR REPOSITORIES</li>
+              <li class="repositoryList">NEW</li>
+              <li class="repositoryList">COMPLETEAZA: "REPOSITORY NAME"</li>
+              <li class="repositoryList">COMPLETEAZA: "DESCRIPTION"</li>
+              <li class="repositoryList">SELECTEAZA: PUBLIC/PRIVAT</li>
+              <li class="repositoryList">CREATE REPOSITORY</li>
+            </ul>
+          </div>
+          <div class="repositoryImage">
+            <img src="1createRep.png" alt="image Repository" />
+          </div>
+        </div>
+
+        <p>IN TERMINAL:</p>
+        <div class="repositoryContainer">
+          <div class="repositoryText">
+            <ul>
+              <li class="repositoryList">
+                git config --global user.email "exemplu@gmail.com"
+              </li>
+              <li class="repositoryList">
+                git config --global user.name"exempluNume"
+              </li>
+              <li class="repositoryList">echo "# exemplu" >> README.md</li>
+              <li class="repositoryList">git init</li>
+              <li class="repositoryList">git add README.md</li>
+              <li class="repositoryList">git commit -m "first commit"</li>
+              <li class="repositoryList">git branch -M main</li>
+              <li class="repositoryList">
+                git remote add origin git@github.com:adestoica/exemplu.git
+              </li>
+              <li class="repositoryList">git push -u origin main</li>
+            </ul>
+          </div>
+          <div class="repositoryImage">
+            <img src="2createRep.png" alt="image Repository2" />
+          </div>
+        </div>
+      </section>
+
+      <h2>Key SSH</h2>
+      <p>Pentru a crea o cheie SSH, trebuie sa urmam urmatorii pasi:</p>
+      <div class="sshClass">
+        <div class="textSSH">
+          <ol>
+            <li class="itemSSH">Ne logam in contul nostru de GitHub.</li>
+            <li class="itemSSH">Intram in settings=>SSH and GPG keys.</li>
+            <li class="itemSSH">Apasam butonul New SSH key.</li>
+            <li class="itemSSH">Completam title.</li>
+            <li class="itemSSH">
+              In terminalul nostru, vom adauga sintaxa : ssh-keygen -t ed25519
+              -C "your_email@example.com", iar apoi vom adauga o parola/key.
+            </li>
+            <li class="itemSSH">
+              Tot in terminal, vom schimba directorul in .ssh, tastam "ls"
+              pentru a vedea id-ul pentru key, tastam "cat " si inseram adresa
+              id-ului.
+            </li>
+            <li class="itemSSH">
+              Adresa care va aparea in final o copiem si ne intoarcem pe
+              platforma GitHub, unde o vom lipi in casuta "key".
+            </li>
+            <li class="itemSSH">
+              Pasul final este sa apasam butonul "Add SSH key".
+            </li>
+          </ol>
+        </div>
+        <div class="imagesSSH">
+          <img src="sshkey.jpg" alt="imagine SSHkey" />
+
+          <img src="terminalssh.jpg" alt="imagine termina" />
+        </div>
+      </div>
+      <section>
+        <h2>Share with link</h2>
+        <p>
+          Pentru a obtine un link pentru pagina noastra, trebuie urmati
+          urmatorii pasi:
+        </p>
+        <div class="sharelinkContainer">
+          <div class="sharelinkLista">
+            <ol>
+              <li class="shareItems">LOG-IN</li>
+              <li class="shareItems">YOUR REPOSITORIES</li>
+              <li class="shareItems">SELECTEAZA PROIECTUL DORIT</li>
+              <li class="shareItems">SETTINGS</li>
+              <li class="shareItems">PAGES</li>
+              <li class="shareItems">SOURCE: DEPLOY FROM A BRANCH</li>
+              <li class="shareItems">BRANCH: MAIN/MASTER, /(ROOT), ->SAVE</li>
+              <li class="shareItems">VISIT SITE</li>
+            </ol>
+          </div>
+          <div>
+            <img
+              class="sharelinkImage"
+              src="linkpages.png"
+              alt="imagine share link"
+            />
+          </div>
+        </div>
+      </section>
       <h3>SETUP</h3>
       <p>
         Configurarea informațiilor despre utilizator utilizate în toate
@@ -190,66 +298,6 @@
       </div>
     </section>
 
-    <h2>Key SSH</h2>
-    <p>Pentru a crea o cheie SSH, trebuie sa urmam urmatorii pasi:</p>
-    <div class="sshClass">
-      <div class="textSSH">
-        <ol>
-          <li class="itemSSH">Ne logam in contul nostru de GitHub.</li>
-          <li class="itemSSH">Intram in settings=>SSH and GPG keys.</li>
-          <li class="itemSSH">Apasam butonul New SSH key.</li>
-          <li class="itemSSH">Completam title.</li>
-          <li class="itemSSH">
-            In terminalul nostru, vom adauga sintaxa : ssh-keygen -t ed25519 -C
-            "your_email@example.com", iar apoi vom adauga o parola/key.
-          </li>
-          <li class="itemSSH">
-            Tot in terminal, vom schimba directorul in .ssh, tastam "ls" pentru
-            a vedea id-ul pentru key, tastam "cat " si inseram adresa id-ului.
-          </li>
-          <li class="itemSSH">
-            Adresa care va aparea in final o copiem si ne intoarcem pe platforma
-            GitHub, unde o vom lipi in casuta "key".
-          </li>
-          <li class="itemSSH">
-            Pasul final este sa apasam butonul "Add SSH key".
-          </li>
-        </ol>
-      </div>
-      <div class="imagesSSH">
-        <img src="sshkey.jpg" alt="imagine SSHkey" />
-
-        <img src="terminalssh.jpg" alt="imagine termina" />
-      </div>
-    </div>
-    <section>
-      <h2>Share with link</h2>
-      <p>
-        Pentru a obtine un link pentru pagina noastra, trebuie urmati urmatorii
-        pasi:
-      </p>
-      <div class="sharelinkContainer">
-        <div class="sharelinkLista">
-          <ol>
-            <li class="shareItems">LOG-IN</li>
-            <li class="shareItems">YOUR REPOSITORIES</li>
-            <li class="shareItems">SELECTEAZA PROIECTUL DORIT</li>
-            <li class="shareItems">SETTINGS</li>
-            <li class="shareItems">PAGES</li>
-            <li class="shareItems">SOURCE: DEPLOY FROM A BRANCH</li>
-            <li class="shareItems">BRANCH: MAIN/MASTER, /(ROOT), ->SAVE</li>
-            <li class="shareItems">VISIT SITE</li>
-          </ol>
-        </div>
-        <div>
-          <img
-            class="sharelinkImage"
-            src="linkpages.png"
-            alt="imagine share link"
-          />
-        </div>
-      </div>
-    </section>
     <!-- <div class="flexExemplu">
       <p class="borderExemplu">primu text</p>
 

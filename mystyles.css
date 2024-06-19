@@ -401,20 +401,30 @@ html {
   padding: 20px;
 }
 
-.containerHub {
+.repositoryContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.itemHub {
+.repositoryList {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 20px;
   background-color: rgb(132, 186, 116);
   border: 2px solid black;
-  width: 30%;
-  align-content: center;
-  color: black;
+  width: 600px;
+
+  padding: 20px;
 }
+
+.repositoryImage img {
+  width: 90%;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
 .sshClass {
   display: flex;
   flex-direction: row;
@@ -424,9 +434,11 @@ html {
   width: 550px;
   margin-left: 20px;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 .textSSH {
   display: flex;
+  flex-wrap: wrap;
   color: black;
 }
 .itemSSH {
@@ -464,4 +476,19 @@ html {
 .sharelinkImage {
   width: 100%;
   margin-left: 20px;
+  margin-top: 30px;
+}
+.containerHub {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.itemHub {
+  display: flex;
+  background-color: rgb(132, 186, 116);
+  border: 2px solid black;
+  width: 30%;
+  align-content: center;
+  color: black;
 }
