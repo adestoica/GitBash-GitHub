@@ -418,17 +418,16 @@ html {
 .sshClass {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .imagesSSH img {
-  width: 600px;
+  width: 550px;
   margin-left: 20px;
   margin-bottom: 10px;
 }
 .textSSH {
   display: flex;
   color: black;
-  justify-content: stretch;
 }
 .itemSSH {
   display: flex;
@@ -436,8 +435,33 @@ html {
   font-size: 20px;
   background-color: rgb(132, 186, 116);
   border: 2px solid black;
-  width: 95%;
+  width: 500px;
 
   align-content: center;
   padding: 10px;
+}
+
+.sharelinkContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sharelinkLista {
+  display: flex;
+  color: rgb(255, 255, 255);
+  flex-direction: row;
+}
+.shareItems {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  background-color: rgb(132, 186, 116);
+  border: 2px solid black;
+  width: 90%;
+
+  padding: 20px;
+}
+.sharelinkImage {
+  width: 100%;
+  margin-left: 20px;
 }
