@@ -29,14 +29,14 @@
 
 .titleHtml {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
   font-family: "Castoro Titling", serif;
-  font-weight: 400;
+  font-weight: 300px;
   font-style: normal;
 }
 
