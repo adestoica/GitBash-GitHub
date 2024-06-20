@@ -2,23 +2,23 @@
   <head>
     <title>CSS</title>
     <link rel="stylesheet" href="mystyles.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   </head>
   <body>
-    <div>
-      <ul class="navigation">
-        <li><a href="index.html">Inapoi acasa</a></li>
-        <li><a href="informatiipersonale.html">Despre mine</a></li>
-        <li><a href="tabel.html"> Tabele</a></li>
-        <li><a href="formulare.html">Formulare</a></li>
-        <li><a href="fisiere.html">Multimedia</a></li>
-        <li><a href="css.html">CSS</a></li>
-        <li><a href="gitbash.html">GitBash</a></li>
-        <li><a href="gitHub.html">GitHub</a></li>
-      </ul>
-    </div>
-    <img class="imagineCSS" src="cssimage.jpg" alt="imagecss" />
+    <ul class="navigation">
+      <li><a href="index.html">Inapoi acasa</a></li>
+      <li><a href="informatiipersonale.html">Despre mine</a></li>
+      <li><a href="tabel.html"> Tabele</a></li>
+      <li><a href="formulare.html">Formulare</a></li>
+      <li><a href="fisiere.html">Multimedia</a></li>
+      <li><a href="css.html">CSS</a></li>
+      <li><a href="gitbash.html">GitBash</a></li>
+      <li><a href="gitHub.html">GitHub</a></li>
+    </ul>
+
+    <img class="imagineCSS" src="cropcss.png" alt="imagecss" />
     <h1>CSS</h1>
-    <hr />
+
     <p>
       CSS este un limbaj folosit pentru a stiliza o pagina HTML. Acesta descrie
       cum vor arata elementele in pagina HTML.
@@ -90,7 +90,7 @@
         <span>border-style</span> specifică ce fel de chenar să fie afișat. Sunt
         permise următoarele valori:
       </p>
-      <ul class="flex-container" style="color: white">
+      <ul class="borderContainer" style="color: white">
         <li class="borderList">dotted- Definește un chenar punctat</li>
         <p style="border-style: dotted">Text scris cu dotted</p>
         <li class="borderList">dashed- Definește o chenar întreruptă</li>
@@ -402,72 +402,23 @@
         align-content.
         <br />Valorile ce pot fi atribuite sunt:
       </p>
-      <ul>
-        <span
-          ><li>flex-start;</li>
-          <li>flex-end;</li>
-          <li>center;</li>
-          <li>stretch;</li>
-          <li>space-between;</li>
-          <li>space-around.</li></span
-        >
-      </ul>
-      <!-- <ul>
-        <li>flex-start</li>
-        <div class="alignContent contentEnd">
-          <p class="contentItem">
-            normal (default): items are packed in their default position as if
-            no value was set.
-          </p>
-          <p class="contentItem">
-            flex-start / start: items packed to the start of the container.
-          </p>
-          <p class="contentItem">
-            flex-end / end: items packed to the end of the container. The (more
-            support) flex-end honors the flex-direction while end honors the
-            writing-mode direction.
-          </p>
-          <p class="contentItem">center: items centered in the container</p>
-          <p class="contentItem">
-            space-between: items evenly distributed; the first line is at the
-            start of the container while the last one is at the end
-          </p>
-          <p class="contentItem">
-            space-around: items evenly distributed with equal space around each
-            line
-          </p>
-          <p class="contentItem">
-            stretch: lines stretch to take up the remaining space
-          </p>
-        </div>
-        <li>flex-end:</li>
-        <div class="alignContent">
-          <p class="contentItem">
-            normal (default): items are packed in their default position as if
-            no value was set.
-          </p>
-          <p class="contentItem">
-            flex-start / start: items packed to the start of the container.
-          </p>
-          <p class="contentItem">
-            flex-end / end: items packed to the end of the container. The (more
-            support) flex-end honors the flex-direction while end honors the
-            writing-mode direction.
-          </p>
-          <p class="contentItem">center: items centered in the container</p>
-          <p class="contentItem">
-            space-between: items evenly distributed; the first line is at the
-            start of the container while the last one is at the end
-          </p>
-          <p class="contentItem">
-            space-around: items evenly distributed with equal space around each
-            line
-          </p>
-          <p class="contentItem">
-            stretch: lines stretch to take up the remaining space
-          </p>
-        </div>
-      </ul> -->
+
+      <div class="aligncontentContainer">
+        <div class="alignitems1"><p>flex-start</p></div>
+        <div class="alignitems2"><p>align-content:"flex-start"</p></div>
+        <div class="alignitems1"><p>flex-end</p></div>
+        <div class="alignitems2"><p>align-content:"flex-end"</p></div>
+
+        <div class="alignitems1"><p>center</p></div>
+        <div class="alignitems2"><p>align-content:"center"</p></div>
+
+        <div class="alignitems1"><p>stretch</p></div>
+        <div class="alignitems2"><p>align-content:"stretch"</p></div>
+
+        <div class="alignitems1"><p>baseline</p></div>
+        <div class="alignitems2"><p>align-content:"baseline"</p></div>
+      </div>
+
       <p>
         GAP, ROW-GAP, COLUMN-GAP: Aceasta proprietate controleaza spatiul dintre
         elementele flexibile.

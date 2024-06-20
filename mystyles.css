@@ -69,13 +69,37 @@ html {
   font-size: 17px;
 }
 .border-red {
-  border: 2px solid rgb(46, 5, 56);
+  border: 2px solid rgb(73, 126, 58);
   /* background-color: rgba(123, 181, 114, 0.5); */
   width: 200px;
   padding: 25px;
   border-style: dotted;
   border-radius: 70px;
   align-content: center;
+}
+.borderContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 13px;
+  align-items: stretch;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.borderList {
+  display: flex;
+  border: 2px solid rgb(0, 0, 0);
+  width: 45%;
+  padding: 25px;
+  align-content: center;
+  background-image: linear-gradient(#7aab5b, rgba(80, 165, 84));
+  border-radius: 5%;
+  justify-content: space-evenly;
+}
+
+.borderList p {
+  align-content: center;
+  text-align: center;
+  width: 20%;
 }
 .flex-container {
   display: flex;
@@ -184,29 +208,44 @@ body {
   display: block;
   width: 100%;
 }
+@media only screen and (min-width: 200px) {
+  .imagineCSS {
+    height: 100px;
+  }
+}
 @media only screen and (min-width: 400px) {
   .imagineCSS {
-    height: 500px;
+    height: 200px;
   }
 }
 @media only screen and (min-width: 1000px) {
   .imagineCSS {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .imagineCSS {
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .imagineCSS {
     height: 500px;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .imagineCSS {
-    height: 600px;
-  }
-}
-@media only screen and (min-width: 1650px) {
-  .imagineCSS {
-    height: 800px;
   }
 }
 @media only screen and (min-width: 1800px) {
   .imagineCSS {
-    height: 900px;
+    height: 600px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .imagineCSS {
+    height: 700px;
+  }
+}
+@media only screen and (min-width: 2200px) {
+  .imagineCSS {
+    height: 800px;
   }
 }
 
@@ -219,38 +258,24 @@ body {
 .dotted {
   border-style: dotted;
 }
-.borderList {
-  display: flex;
-  border: 2px solid rgb(0, 0, 0);
-  width: 45%;
-  padding: 25px;
-  align-content: center;
-  background-image: linear-gradient(#550e5b, rgba(206, 56, 225, 0.5));
-  border-radius: 5%;
-  justify-content: space-evenly;
-}
 
-.borderList p {
-  align-content: center;
-  text-align: center;
-  width: 20%;
-}
 .justifyContent {
   display: flex;
   justify-content: flex-start;
   gap: 20px;
-  background-color: rgb(79, 14, 86);
+  background-color: rgb(80, 165, 84);
   border-radius: px;
 }
 .item {
   display: flex;
-  border: 3px solid rgb(71, 6, 82);
-  width: 80px;
-  background-color: rgb(242, 255, 0);
+  border: 3px solid rgb(0, 0, 0);
+  width: 120px;
+  background-color: rgb(13, 29, 4);
   padding: 15px;
   margin: 10px;
-  color: black;
+  color: rgb(255, 255, 255);
 }
+
 .justifyContent.end {
   display: flex;
   justify-content: flex-end;
@@ -275,7 +300,7 @@ body {
   align-items: flex-start;
   display: flex;
   gap: 10px;
-  background-color: rgb(79, 14, 86);
+  background-color: rgb(80, 165, 84);
   border-radius: px;
 }
 
@@ -284,11 +309,11 @@ body {
   flex-wrap: wrap;
   width: 20%;
   font-size: 15px;
-  border: 3px solid rgb(71, 6, 82);
-  background-color: rgb(242, 255, 0);
-  padding: 15px;
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgb(6, 14, 3);
+  padding: 10px;
   margin: 10px;
-  color: black;
+  color: rgb(255, 255, 255);
   gap: 10%;
 }
 .alignItems.flexEnd {
@@ -306,37 +331,16 @@ body {
 .textModificat {
   width: 150px;
 }
-/* .alignContent {
-    align-content: space-around;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    flex-direction: row;
-    background-color: rgb(79, 14, 86);
-    border-radius: px;
-  }
-  .contentItem {
-    align-content: space-around;
-    display: flex;
-    font-size: 12px;
-    border: 3px solid rgb(71, 6, 82);
-    background-color: rgb(242, 255, 0);
-    padding: 30px;
-    margin: 10px;
-    color: black;
-    flex-shrink: 3;
-    gap: 10%;
-  } */
+
 .gapClass {
   display: flex;
   gap: 40px;
 }
 .gapItem {
   display: flex;
-
-  display: flex;
   font-size: 30px;
-  border: 3px solid rgb(71, 6, 82);
-  background-color: rgb(242, 255, 0);
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgb(132, 186, 116);
   padding: 30px;
   margin: 10px;
   color: black;
@@ -491,4 +495,31 @@ html {
   width: 30%;
   align-content: center;
   color: black;
+}
+
+.aligncontentContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30%;
+}
+.alignitems1 {
+  display: flex;
+  background-color: rgb(132, 186, 116);
+  border: 2px solid black;
+
+  width: 110px;
+  align-content: center;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+.alignitems2 {
+  display: flex;
+  background-color: rgb(2, 3, 5);
+
+  border: 10px solid rgb(90, 140, 84);
+  width: 40%;
+  align-content: center;
+  color: rgb(255, 255, 255);
+  padding: 30px;
 }
