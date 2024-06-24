@@ -582,3 +582,24 @@ html {
   width: 28%;
   font-size: 17px;
 }
+
+.operationContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  text-align: center;
+}
+
+.operationItem {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(132, 186, 116);
+  border: 2px solid black;
+  align-content: center;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 28%;
+  font-size: 20px;
+}
